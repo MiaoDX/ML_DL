@@ -2,7 +2,7 @@ Notes for [Tutorial on deeplearning.net with theano](http://deeplearning.net/tut
 
 # Tutorial
 
-## [Convolutional Neural Networks (LeNet)](http://deeplearning.net/tutorial/lenet.html)
+## Convolutional Neural Networks (LeNet)
 
 The description of CNN seems a little tedious and hard to understand.
 
@@ -13,12 +13,12 @@ An auto-encoder and corresponding decoder make up a lossy-compression function, 
 
 For example: 
 
-```
+``` python
 f(x) = x//10
 g(x) = x*10
 ```
 
-Will transfer 101 to 10 and recover to 100, there will be some loss, but the encoded (latent) representation is much less in the dimension.
+Will transfer 101 to 10 and recover to 100, there will be some loss, but the encoded (/latent) representation is much less in the dimension.
 
 ### Denoising autoencoder
 
@@ -90,3 +90,5 @@ It is the `old version` of configuration, newer with guparray for GPU. We failed
 * The code style is not so appealing, and too much tricks involved.
     - Declared shared memory explicitly to make use of GPU
     - Hand calculate number of units in each layer in LeNet example
+
+* It is far from intuitive, will find another tutorial
